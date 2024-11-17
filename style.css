@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url(f.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.page1 {
+  width: 100%;
+  height: 100%;
+}
+
+.blink {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: blink 1s linear infinite alternate;
+  background-color: rgba(184, 184, 184, 0.762);
+}
+
+@keyframes blink {
+  from {
+    color: red;
+  }
+  to {
+    color: brown;
+  }
+}
+
+nav {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+nav h1 {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.navleft {
+  display: flex;
+  transition: 1s all;
+}
+
+.navleft h1:hover {
+  color: red;
+}
+
+.navmid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navmid > img {
+  height: 100%;
+}
+
+.navright {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+
+}
+
+#box h1:hover {
+  color: red;
+}
+#box button:hover {
+  color: red;
+}
+#box i:hover {
+  color: red;
+}
+
+#box {
+  height: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#box i{
+  cursor: pointer;
+
+}
+
+.con {
+  height: 86.5%;
+  display: flex;
+}
+
+.left {
+  width: 34%;
+  height: 100%;
+}
+
+.left > img {
+  width: 100%;
+  height: 99.8%;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+
+}
+
+.left img:hover{
+    scale: 1.004;
+}
+
+.mid {
+  width: 34%;
+}
+
+.mid > img {
+  width: 100%;
+  height: 99.8%;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+
+}
+
+.mid img:hover{
+    scale: 1.004;
+}
+.right {
+  width: 34%;
+  height: 100%;
+}
+
+.right > img {
+  width: 99.8%;
+  height: 99.8%;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  
+}
+
+.right img:hover{
+    scale: 1.004;
+}
